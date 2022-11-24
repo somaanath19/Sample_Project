@@ -1,0 +1,16 @@
+<p>From:</p>
+<select name="Country" #country (change)="onFrom(country.value)">
+  <option value="none">none</option>
+  <option value="IN">India</option>
+  <option value="US">United States</option>
+</select>
+<p>To:</p>
+<select name="Country" #to (change)="onTo(to.value)">
+  <option value="none">none</option>
+  <option value="IN">India</option>
+  <option value="US">United States</option>
+</select>
+<br /><br />
+<input type="text" placeholder="Amt here" #bx1 />
+<button (click)="us_inr(bx1.value)">Convert</button>
+{{ num2 }}

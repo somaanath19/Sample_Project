@@ -1,0 +1,10 @@
+<select (change)="state($event); (!val)" style="width: 10%">
+  <option></option>
+  <option *ngFor="let x of food" [value]="x.s_no">{{ x.name }}</option>
+</select>
+<br />
+<div *ngIf="val">
+  <select style="width: 20%">
+    <option *ngFor="let y of spice">{{ y }}</option>
+  </select>
+</div>
